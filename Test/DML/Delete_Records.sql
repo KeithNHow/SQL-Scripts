@@ -1,0 +1,20 @@
+USE [Test]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+BEGIN	
+	SET NOCOUNT ON;
+	DELETE Customer;
+	DELETE CustomerGroup;
+	DELETE Vendor;
+	DELETE VendorGroup; 
+END
+
+GO
+
+

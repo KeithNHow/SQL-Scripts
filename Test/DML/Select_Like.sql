@@ -1,0 +1,16 @@
+USE [Test]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SELECT Name
+FROM Customer
+WHERE Name Like '%ids%'
+
+GO
+
+

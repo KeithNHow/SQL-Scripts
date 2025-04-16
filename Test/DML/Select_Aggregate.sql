@@ -1,0 +1,22 @@
+USE [Test]
+GO
+
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SELECT Bonus,SUM(Bonus*Bonus) AS [Bonus Squared]
+FROM [Salesperson] 
+GROUP BY Bonus WITH ROLLUP
+
+SELECT STDEVP(Bonus) AS [STD DEV P]
+FROM Salesperson
+
+SELECT STDEV(Bonus) AS [STD DEV]
+FROM Salesperson
+
+GO
+
+
